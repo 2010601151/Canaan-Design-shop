@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CANAAN DESIGN SHOP Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+      <div class="logo-container">
+        <img id="brand-logo" src="logo.PNG" alt="Brand Logo">
+       </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="cart-icon-container">
+            <button id="cart-icon" aria-label="View Cart">
+                <img src="cart1.PNG" alt="Cart">
+                <span id="cart-count">0</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <!-- Catalog Section -->
+        <section class="catalog">
+            <h2>Shop wtih Cannan Design Latest Trends</h2>
+            
+            <!-- Filter Categories -->
+            <div class="categories">
+                <button class="filter-btn" data-category="all">All</button>
+                <button class="filter-btn" data-category="men">Men</button>
+                <button class="filter-btn" data-category="women">Women</button>
+                <button class="filter-btn" data-category="accessories">Accessories</button>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="product-grid">
+                <!-- Product Items -->
+                <div class="product-item" data-category="men">
+                    <img src="men1.jpg" alt="Men's Shirt">
+                    <div class="product-details">
+                        <h3>Men's Shirt</h3>
+                        <p class="price">$25.00</p>
+                        <button class="add-to-cart" data-product="Men's Shirt" data-price="25.00">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-item" data-category="women">
+                    <img src="woman1.jpg" alt="Women's Dress">
+                    <div class="product-details">
+                        <h3>Women's Dress</h3>
+                        <p class="price">$45.00</p>
+                        <button class="add-to-cart" data-product="Women's Dress" data-price="45.00">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-item" data-category="accessories">
+                    <img src="watches.jpg" alt="Stylish Watch">
+                    <div class="product-details">
+                        <h3>Stylish Watch</h3>
+                        <p class="price">$35.00</p>
+                        <button class="add-to-cart" data-product="Stylish Watch" data-price="35.00">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" style="display: none;">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button id="close-cart" aria-label="Close Cart">Close</button>
+        </div>
+        <ul id="cart-items">
+            <!-- Cart items will be dynamically inserted here -->
+        </ul>
+        <div class="cart-footer">
+            <p>Total: $<span id="cart-total">0.00</span></p>
+            <button id="checkout-button" aria-label="Proceed to Checkout">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 CANAAN DESIGN SHOP. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="scripts.js"></script>
+</body>
+</html>
